@@ -1,0 +1,5 @@
+{
+  "name": "SchemaFlow - Visual JSON Schema Designer",
+  "description": "A visual, node-based JSON schema designer with drag-and-drop interface and JSON-to-schema conversion capabilities.",
+  "requestFramePermissions": []
+}
