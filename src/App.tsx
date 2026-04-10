@@ -13,9 +13,10 @@ import {
   Share2,
   Download
 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
 export default function App() {
   const [schema, setSchema] = useState<JSONSchema>({ type: 'object' });
@@ -73,11 +74,14 @@ export default function App() {
               Export
             </Button>
             <Separator orientation="vertical" className="h-6 mx-1" />
-            <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
-                <Github className="w-4 h-4" />
-              </a>
-            </Button>
+            <a 
+              href="https://github.com" 
+              target="_blank" 
+              rel="noreferrer"
+              className={cn(buttonVariants({ variant: "ghost", size: "icon" }), "h-9 w-9")}
+            >
+              <Github className="w-4 h-4" />
+            </a>
           </div>
         </header>
 
