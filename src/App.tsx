@@ -13,7 +13,7 @@ import {
   Share2,
   Download
 } from 'lucide-react';
-import { Button, buttonVariants } from '@/components/ui/button.tsx';
+import { Button } from "@/components/ui/button";
 import { Separator } from '@/components/ui/separator.tsx';
 import { Badge } from '@/components/ui/badge.tsx';
 import { cn } from '@/lib/utils';
