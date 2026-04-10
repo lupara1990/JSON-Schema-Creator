@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { SchemaFlow } from '@/components/SchemaFlow';
 import { JSONEditor } from '@/components/JSONEditor';
 import { JSONSchema } from '@/types/schema';
-import { TooltipProvider } from '@/components/ui/tooltip';
+import { TooltipProvider } from '@/components/ui/tooltip.tsx';
 import { 
   Workflow, 
   Github, 
@@ -13,9 +13,9 @@ import {
   Share2,
   Download
 } from 'lucide-react';
-import { Button, buttonVariants } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { Badge } from '@/components/ui/badge';
+import { Button, buttonVariants } from '@/components/ui/button.tsx';
+import { Separator } from '@/components/ui/separator.tsx';
+import { Badge } from '@/components/ui/badge.tsx';
 import { cn } from '@/lib/utils';
 
 export default function App() {
